@@ -6,7 +6,7 @@ function displayMainPage(req, res) {
 }
 
 function postFriends(req, res) {
-  console.log("req ", req.body);
+  console.log("req body :  ", req.body);
   if (req.body.name) {
     model.push({
       name: req.body.name,
