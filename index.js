@@ -16,7 +16,10 @@ app.use("/friends", friendRouter);
 app.use("/messages", messageRouter);
 
 app.get("/", (_, res) => {
-  res.send("<h1>Hello World</h1>");
+  res.render("index", {
+    title: "We are Learning At OOP Technologies",
+    caption: "Let' s go skining!",
+  });
 });
 
 app.listen(PORT, () => {
