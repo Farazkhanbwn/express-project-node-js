@@ -1,8 +1,12 @@
 const model = require("../models/friends.model");
 
 function displayMainPage(req, res) {
-  console.log("first");
-  return res.send("Hello We are learning");
+  res.render("friends", {
+    friend: "Abdul Rehman",
+    attitude: "positive smiling attitude",
+  });
+  // console.log("first");
+  // return res.send("Hello We are learning");
 }
 
 function postFriends(req, res) {
